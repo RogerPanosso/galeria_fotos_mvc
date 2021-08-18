@@ -1,0 +1,170 @@
+body {
+  margin: 0!important;
+  padding: 0!important;
+}
+header nav {
+  display: block!important;
+  clear: both!important;
+}
+nav li .btn-warning {
+  background-color: #EEB422!important;
+  border:1px solid #EEB422!important;
+  border-color: #EEB422!important;
+  border-style: solid!important;
+  color: #1C1C1C!important;
+}
+nav li .btn-warning:hover {
+  background-color: #EEAD0E!important;
+  border:1px solid #EEAD0E!important;
+  border-color: #EEAD0E!important;
+  border-style: solid!important;
+  transition: .1s all ease!important;
+  display: block!important;
+  color: #fff!important;
+}
+.navbar-brand img {
+  margin: 0!important;
+  visibility: visible!important;
+  width: 60px!important;
+}
+nav button {
+  padding: 10px!important;
+  border:0px;
+}
+nav ul li a {
+  color: #f5dada!important;
+  font-style: unset!important;
+  font-weight: 380!important;
+}
+nav ul li a:hover {
+  color: #f76666!important;
+  visibility: visible!important;
+  transition: 0.1s all ease!important;
+  direction: ltr!important;
+  vertical-align: inherit!important;
+}
+.link-striped {
+  text-decoration: none!important;
+}
+.page-header, .lead {
+  font-size: 30px!important;
+  font-weight: 380!important;
+  clear: both!important;
+  font-family: Georgia!important;
+  overflow: hidden!important;
+}
+.page-header small, .alert-link {
+  font-size: 14px!important;
+  font-weight: 300!important;
+  color: blue!important;
+}
+.btn-group, .btn-success {
+  clear: both!important;
+  min-height: 45px!important;
+  width: 140px!important;
+  border:1px solid #439a9a!important;
+  border-radius: 3px!important;
+  font-size: 15.7px!important;
+  font-weight: 375!important;
+  background-color: #006600!important;
+}
+form[name=cadastroUser] input {
+  border:1px solid #DCDCDC!important;
+  border-style: solid!important;
+  border-color: #DCDCDC!important;
+  display: block!important;
+  outline: 0!important;
+  padding: 15px!important;
+  height: 40px!important;
+  font-size: 16px!important;
+  font-style: unset!important;
+  font-weight: 377!important;
+  color: #353535!important;
+}
+form[name=loginUser] label {
+  font-size: 16px!important;
+  font-style: unset!important;
+  font-weight: 380!important;
+  color: #hsla(360, 100%, 100%, 0.5)!important;
+}
+form[name=loginUser] button[type=submit] {
+  background-color: #74992e!important;
+  border:1px solid #74992e!important;
+  border-style: solid;
+  border-color: #74992e!important;
+  box-shadow: 0.2px 0.2px 0.2px #ddd!important;
+  display: block!important;
+  color:  #f4f4f4!important;
+  font-size: 16.5px!important;
+  letter-spacing: 0.1px!important;
+  word-spacing: 0.1px!important;
+  font-weight: 382!important;
+}
+form[name=addCategoria] label {
+  font-size: 16.7px!important;
+  font-style: unset!important;
+  color: #976999!important;
+  font-family: inherit!important;
+}
+form[name=addCategoria] input {
+  border:1px solid #ddd!important;
+  border-color: #ddd!important;
+  border-style: solid!important;
+  height: 41px!important;
+  font-size: 15.7px!important;
+  font-weight: 377!important;
+  color: #101010!important;
+}
+form[name=addFoto] label {
+  font-size: 16.7px!important;
+  font-style: unset!important;
+  color: #437ada!important;
+  font-family: inherit!important;
+}
+form[name=addFoto] input {
+  border:1px solid #ddd!important;
+  border-color: #ddd!important;
+  border-style: solid!important;
+  height: 41px!important;
+  font-size: 15.7px!important;
+  font-weight: 377!important;
+  color: #101010!important;
+}
+form[name=addFoto] textarea {
+  resize: none!important;
+}
+#loginUser .container {
+  max-width: 400px!important;
+  min-height: 500px!important;
+  display: flex!important;
+  margin: auto!important;
+  padding: 20px!important;
+}
+#loginUser .container, .areaLoginUser {
+  flex: 1;
+  justify-content: center!important;
+  align-self: center!important;
+  align-content: center;
+}
+.alert-warning {
+  background-color: #FFFFBB;
+}
+.alert-warning small {
+  font-size: 14px!important;
+  text-decoration-style: solid!important;
+  margin-bottom: 0!important;
+  color: #222200!important;
+}
+#ModalEsqueciSenha .modal-lg {
+  max-width: 650px!important;
+  visibility: visible!important;
+}
+#ModalEsqueciSenha form input {
+  border:1px solid #DCDCDC!important;
+  border-color: #DCDCDC!important;
+  border-style: solid!important;
+  overflow: hidden!important;
+  color: #101010!important;
+  font-size: 16px!important;
+  font-weight: 370!important;
+}
