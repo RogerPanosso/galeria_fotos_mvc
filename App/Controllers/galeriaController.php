@@ -7,6 +7,7 @@
 
   use App\Core\Controller;
   use App\Models\Fotos;
+  use App\Models\Categorias;
 
   class galeriaController extends Controller
   {
@@ -18,7 +19,10 @@
     public function index()
     {
       $foto = new Fotos();
-      $dadosModel = array("fotos" => $foto->getFotos());
+      $categoria = new Categorias();
+      $dadosModel = array(
+        "fotos" => $foto->getFotos(),
+      );
       $this->loadTemplate("galeria_fotos", $dadosModel);
     }
   }

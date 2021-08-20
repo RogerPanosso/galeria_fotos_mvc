@@ -44,7 +44,7 @@
     public function getFotos()
     {
       $query = "SELECT fotos.titulo, fotos.autor, fotos.foto, categorias.nome, fotos.descricao FROM fotos
-      INNER JOIN categorias ON categorias.id = fotos.categoria ORDER BY fotos.id DESC";
+      INNER JOIN categorias ON categorias.id = fotos.categoria ORDER BY fotos.categoria DESC";
       $query = $this->pdo->query($query);
       if($query->rowCount() > 0)
       {
