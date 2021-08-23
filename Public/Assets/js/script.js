@@ -1,3 +1,27 @@
+//function procedimento para validar campos(inputs) de formulário de login de usuário
+function validaFormLogin() {
+  let email = login.email.value;
+  let senha = login.email.value;
+
+  if(email == "" || email.indexOf("@") == -1) {
+    window.alert("por favor informe um endereço de e-mail valido");
+    return false;
+  }
+
+  if(senha == "") {
+    window.alert("por favor informe uma senha valida");
+    return false;
+  }
+}
+
+//function procedimento para validar campo(input) de formulário de adição de categorias
+function validaFormAddCategoria() {
+  let categoria = addCategoria.categoria.value;
+  if(categoria == "" || categoria.length <= 3) {
+    window.alert("por favor informe uma categoria contendo no mínimo 3 caracteres");
+    return false;
+  }
+}
 //function procedimento para validar campos(inputs) de formulário de adição de fotos
 function validaFormAddFoto() {
   let titulo = addFoto.titulo.value;

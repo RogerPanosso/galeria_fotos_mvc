@@ -4,7 +4,7 @@
       <div class="figure d-flex justify-content-center mb-3">
         <img src="<?=BASE_URL;?>Public/Assets/images/logo.png" class="figure-img img-fluid rounded shadow-sm" title="Photo" alt="Photo"/>
       </div>
-      <form name="loginUser" method="POST" action="<?=BASE_URL;?>loginuser/login/">
+      <form name="login" method="POST" action="<?=BASE_URL;?>loginuser/login/">
         <div class="form-group">
           <label for="email" class="form-label">E-Mail</label>
           <input type="email" name="email" class="form-control" autofocus autocomplete="off" placeholder="E-Mail" id="email" required/>
@@ -13,7 +13,7 @@
           <label for="senha" class="form-label">Senha</label>
           <input type="password" name="senha" class="form-control" autocomplete="off" placeholder="Senha" id="senha" required/>
         </div>
-        <button type="submit" class="btn btn-primary btn-block my-2 p-2 mb-3 font-weight-normal">Entrar</button>
+        <button type="submit" class="btn btn-primary btn-block my-2 p-2 mb-3 font-weight-normal" onclick="return validaFormLogin()">Entrar</button>
       </form>
       <hr class="bg-light">
       <p class="bd-lead text-center mb-2">

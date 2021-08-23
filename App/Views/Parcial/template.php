@@ -207,14 +207,14 @@
                   <form name="addCategoria" method="POST" action="<?=BASE_URL;?>adicionarcategoria/salvarCategoria/">
                     <div class="form-group">
                       <label for="categoria" class="form-label">Categoria</label>
-                      <input type="text" name="categoria" class="form-control" autocomplete="off" placeholder="Ex: Modas" id="modas" required/>
+                      <input type="text" name="categoria" class="form-control" autocomplete="off" autofocus placeholder="Ex: Modas" id="modas" required/>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="modal-footer bg-light">
-              <button type="submit" class="btn btn-info">Adicionar</button>
+              <button type="submit" class="btn btn-info" onclick="return validaFormAddCategoria()">Adicionar</button>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
             </div>
           </form>
