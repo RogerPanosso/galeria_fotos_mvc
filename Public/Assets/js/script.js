@@ -1,3 +1,30 @@
+//function procedimento para validar campos(input) de formulário de cadastro de usuário
+function validaFormCadastroUser() {
+  let nome = cadastroUser.nome.value;
+  let email = cadastroUser.email.value;
+  let senha = cadastroUser.senha.value;
+  let confirmar_senha = cadastroUser.confirm_senha.value;
+
+  if(nome == "") {
+    window.alert("por favor informe um nome valido");
+    return false;
+  }
+
+  if(email == "" || email.indexOf("@") == -1) {
+    window.alert("por favor informe um endereço de e-mail valido");
+    return false;
+  }
+
+  if(senha == "" || senha.length < 5) {
+    window.alert("por favor informe uma senha valida contendo no mínimo 5 caracteres");
+    return false;
+  }
+
+  if(confirmar_senha == "") {
+    window.alert("por favor confirme sua senha a ser definida");
+    return false;
+  }
+}
 //function procedimento para validar campos(inputs) de formulário de login de usuário
 function validaFormLogin() {
   let email = login.email.value;

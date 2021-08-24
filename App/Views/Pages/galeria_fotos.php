@@ -17,26 +17,6 @@
       </div>
     </div>
     <div class="row mb-0">
-      <div class="col-md-3 order-1 mb-3">
-        <!-- Início Form de filtragem de categorias -->
-        <form name="filtroCategorias" method="POST">
-          <div class="form-group">
-            <label for="categoria" class="form-label">Categoria</label>
-            <select name="categoria" class="form-control" autofocus id="categoria" onchange="this.form.submit()">
-              <?php if(!empty($categorias)):?>
-                <option class="text-dark" value=""> -- SELECIONE -- </option>
-                <?php foreach($categorias as $categoria): ?>
-                  <option class="text-darl" value="<?=$categoria['id'];?>" <?=($categoria["id"] == $filtro)?"selected":"";?>><?=$categoria["nome"];?></option>
-                <?php endforeach;?>
-                <option value="TODAS" class="text-dark">TODAS</option>
-              <?php endif;?>
-            </select>
-          </div>
-        </form>
-        <!-- Fim Form de filtragem de categorias -->
-      </div>
-    </div>
-    <div class="row mb-0">
       <?php
         if(!empty($fotos))
         {

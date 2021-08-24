@@ -40,7 +40,7 @@
             <label for="confirm_senha" class="form-label">Confirmar Senha</label>
             <input type="password" name="confirm_senha" class="form-control" autocomplete="off" placeholder="Confirmar Senha" id="confirm_senha" required/>
           </div>
-          <button type="submit" class="btn btn-primary btn-block my-2 p-2" onclick="validaFormCadastroUser()">Cadastrar</button>
+          <button type="submit" class="btn btn-primary btn-block my-2 p-2" onclick="return validaFormCadastroUser()">Cadastrar</button>
         </form>
       </div>
     </div>

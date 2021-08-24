@@ -18,13 +18,11 @@
 
     public function index()
     {
-      $filtro_categoria = filter_input(INPUT_POST, "categoria", FILTER_SANITIZE_STRING);
       $foto = new Fotos();
       $categoria = new Categorias();
       $dadosModel = array(
-        "fotos" => $foto->getFotos($filtro_categoria),
+        "fotos" => $foto->getFotos(),
         "categorias" => $categoria->getCategoriasAll(),
-        "filtro" => $filtro_categoria
       );
       $this->loadTemplate("galeria_fotos", $dadosModel);
     }

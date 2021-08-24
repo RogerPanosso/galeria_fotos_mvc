@@ -41,22 +41,11 @@
       }
     }
 
-    public function getFotos($filtro_categoria)
+    public function getFotos()
     {
-      if($filtro_categoria != "TODAS")
-      {
-        $query = "SELECT fotos.id, fotos.titulo, fotos.autor, fotos.foto, categorias.nome, fotos.descricao FROM fotos
-        INNER JOIN categorias ON categorias.id = fotos.categoria WHERE fotos.categoria = :categoria";
-        $query = $this->pdo->prepare($query);
-        $query->bindValue(":categoria", $filtro_categoria);
-        $query->execute();
-      }
-      else
-      {
-        $query = "SELECT fotos.id, fotos.titulo, fotos.autor, fotos.foto, categorias.nome, fotos.descricao FROM fotos
-        INNER JOIN categorias ON categorias.id = fotos.categoria ORDER BY fotos.categoria DESC";
-        $query = $this->pdo->query($query);
-      }
+      $query = "SELECT fotos.id, fotos.titulo, fotos.autor, fotos.foto, categorias.nome, fotos.descricao FROM fotos
+      INNER JOIN categorias ON categorias.id = fotos.categoria ORDER BY fotos.categoria DESC";
+      $query = $this->pdo->query($query);
 
       if($query->rowCount() > 0)
       {
