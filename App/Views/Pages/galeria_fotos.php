@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="row mb-0">
-      <div class="col-md-12 order-1 mb-3">
+      <div class="col-md-12 order-1 mb-2">
         <div class="alert alert-warning fade show shadow-sm bd-lead text-center" role="alert">
           <small class="mb-0">
             Olá <?=$_SESSION["login"]["nome"];?> segue abaixo as seguintes fotos publicadas atualmente perante a galeria !!
@@ -61,8 +61,8 @@
           </div>
           <div class="card-footer">
             <div class="text-center">
-              <a class="btn btn-info" href="#"><i class="fa fa-edit"></i> Editar</a>
-              <a class="btn btn-danger" href="#"><i class="fa fa-trash"></i> Excluir</a>
+              <a class="btn btn-info" href="<?=BASE_URL;?>galeria/editarFoto/<?=$foto["id"];?>"><i class="fa fa-edit"></i> Editar</a>
+              <a class="btn btn-danger" href="<?=BASE_URL;?>galeria/excluirFoto/<?=$foto["id"];?>"><i class="fa fa-trash"></i> Excluir</a>
             </div>
           </div>
         </div>

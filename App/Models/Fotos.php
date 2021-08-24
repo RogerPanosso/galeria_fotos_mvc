@@ -45,7 +45,7 @@
     {
       if($filtro_categoria != "TODAS")
       {
-        $query = "SELECT fotos.titulo, fotos.autor, fotos.foto, categorias.nome, fotos.descricao FROM fotos
+        $query = "SELECT fotos.id, fotos.titulo, fotos.autor, fotos.foto, categorias.nome, fotos.descricao FROM fotos
         INNER JOIN categorias ON categorias.id = fotos.categoria WHERE fotos.categoria = :categoria";
         $query = $this->pdo->prepare($query);
         $query->bindValue(":categoria", $filtro_categoria);
@@ -53,7 +53,7 @@
       }
       else
       {
-        $query = "SELECT fotos.titulo, fotos.autor, fotos.foto, categorias.nome, fotos.descricao FROM fotos
+        $query = "SELECT fotos.id, fotos.titulo, fotos.autor, fotos.foto, categorias.nome, fotos.descricao FROM fotos
         INNER JOIN categorias ON categorias.id = fotos.categoria ORDER BY fotos.categoria DESC";
         $query = $this->pdo->query($query);
       }
