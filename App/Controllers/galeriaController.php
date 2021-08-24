@@ -26,5 +26,16 @@
       );
       $this->loadTemplate("galeria_fotos", $dadosModel);
     }
+
+    public function editarFoto($id)
+    {
+      $categoria = new Categorias();
+      $foto = new Fotos();
+      $dadosModel = array(
+        "categorias" => $categoria->getCategoriasAll(),
+        "foto" => $foto->getFoto($id)
+      );
+      $this->loadTemplate("editar_foto", $dadosModel);
+    }
   }
 ?>

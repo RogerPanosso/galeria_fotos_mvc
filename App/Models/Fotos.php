@@ -57,5 +57,22 @@
         return array();
       }
     }
+
+    public function getFoto($id)
+    {
+      $query = "SELECT fotos.id, fotos.titulo, fotos.autor, fotos.foto, fotos.categoria, fotos.descricao FROM fotos WHERE fotos.id = :id";
+      $query = $this->pdo->prepare($query);
+      $query->bindValue(":id", $id);
+      $query->execute();
+      if($query->rowCount() > 0)
+      {
+        $foto = $query->fetch(\PDO::FETCH_ASSOC);
+        return $foto;
+      }
+      else
+      {
+        return array();
+      }
+    }
   }
 ?>
