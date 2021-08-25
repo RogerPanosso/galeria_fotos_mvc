@@ -8,28 +8,28 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="<?=BASE_URL;?>/Public/Assets/images/banner_slide1.jpg" class="img-fluid w-100" title="Slide1" alt="Slide1"/>
+        <img src="http://localhost/galeria_fotos/Public/Assets/images/banner_slide1.jpg" class="img-fluid w-100" title="Slide1" alt="Slide1"/>
         <div class="carousel-caption d-none d-md-block">
           <h5>Legeanda Slide 1</h5>
           <p>Está é uma breve descrição relacionada ao primeiro slide. Referente ao projeto galeria de fotos.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="<?=BASE_URL;?>/Public/Assets/images/banner_slide2.jpg" class="img-fluid w-100" title="Slide2" alt="Slide2"/>
+        <img src="http://localhost/galeria_fotos/Public/Assets/images/banner_slide2.jpg" class="img-fluid w-100" title="Slide2" alt="Slide2"/>
         <div class="carousel-caption d-none d-md-block">
           <h5>Legeanda Slide 2</h5>
           <p>Está é uma breve descrição relacionada ao segundo slide. Referente ao projeto galeria de fotos.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="<?=BASE_URL;?>/Public/Assets/images/banner_slide3.jpg" class="img-fluid w-100" title="Slide3" alt="Slide3"/>
+        <img src="http://localhost/galeria_fotos/Public/Assets/images/banner_slide3.jpg" class="img-fluid w-100" title="Slide3" alt="Slide3"/>
         <div class="carousel-caption d-none d-md-block">
           <h5>Legeanda Slide 3</h5>
           <p>Está é uma breve descrição relacionada ao terceiro slide. Referente ao projeto galeria de fotos.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="<?=BASE_URL;?>/Public/Assets/images/banner_slide4.jpg" class="img-fluid w-100" title="Slide4" alt="Slide4"/>
+        <img src="http://localhost/galeria_fotos/Public/Assets/images/banner_slide4.jpg" class="img-fluid w-100" title="Slide4" alt="Slide4"/>
         <div class="carousel-caption d-none d-md-block">
           <h5>Legeanda Slide 4</h5>
           <p>Está é uma breve descrição relacionada ao quarto slide. Referente ao projeto galeria de fotos.</p>
@@ -85,7 +85,7 @@
     <div class="row mb-0">
       <div class="col-md-3 order-1 mb-3">
         <div class="card shadow-sm">
-          <img src="<?=BASE_URL;?>/Public/Assets/images/photo_card1.jpg" class="card-img-top" title="Photo Card 1" alt="Photo Card 1"/>
+          <img src="http://localhost/galeria_fotos/Public/Assets/images/photo_card1.jpg" class="card-img-top" title="Photo Card 1" alt="Photo Card 1"/>
           <div class="card-body">
             <div class="card-title">
               Primeiro Card.
@@ -101,7 +101,7 @@
       </div>
       <div class="col-md-3 order-2 mb-3">
         <div class="card shadow-sm">
-          <img src="<?=BASE_URL;?>/Public/Assets/images/photo_card2.jpg" class="card-img-top" title="Photo Card 2" alt="Photo Card 2"/>
+          <img src="http://localhost/galeria_fotos/Public/Assets/images/photo_card2.jpg" class="card-img-top" title="Photo Card 2" alt="Photo Card 2"/>
           <div class="card-body">
             <div class="card-title">
               Segundo Card.
@@ -117,7 +117,7 @@
       </div>
       <div class="col-md-3 order-3 mb-3">
         <div class="card shadow-sm">
-          <img src="<?=BASE_URL;?>/Public/Assets/images/photo_card3.jpg" class="card-img-top" title="Photo Card 3" alt="Photo Card 3"/>
+          <img src="http://localhost/galeria_fotos/Public/Assets/images/photo_card3.jpg" class="card-img-top" title="Photo Card 3" alt="Photo Card 3"/>
           <div class="card-body">
             <div class="card-title">
               Terceiro Card.
@@ -133,7 +133,7 @@
       </div>
       <div class="col-md-3 order-4 mb-3">
         <div class="card shadow-sm">
-          <img src="<?=BASE_URL;?>/Public/Assets/images/photo_card4.jpg" class="card-img-top" title="Photo Card 4" alt="Photo Card 4"/>
+          <img src="http://localhost/galeria_fotos/Public/Assets/images/photo_card4.jpg" class="card-img-top" title="Photo Card 4" alt="Photo Card 4"/>
           <div class="card-body">
             <div class="card-title">
               Quarto Card.
@@ -159,7 +159,7 @@
         </div>
       </div>
     </div>
-    <form name="contato" method="POST" action="<?=BASE_URL;?>/contato/">
+    <form name="contato" method="POST" action="http://localhost/galeria_fotos/contato/">
       <div class="form-row">
         <div class="col-md-12 order-1">
           <div class="alert alert-primary fade show shadow-sm bd-lead text-center" role="alert">

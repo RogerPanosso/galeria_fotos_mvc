@@ -4,10 +4,10 @@
       <div class="col-md-12 order-1 mt-5">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a class="link-striped" href="<?=BASE_URL;?>home/">home</a>
+            <a class="link-striped" href="http://localhost/galeria_fotos/home/">home</a>
           </li>
           <li class="breadcrumb-item">
-            <a class="link-striped" href="<?=BASE_URL;?>galeria/">galeria</a>
+            <a class="link-striped" href="http://localhost/galeria_fotos/galeria/">galeria</a>
           </li>
           <li class="breadcrumb-item active">
             editarFoto/<?=$foto["id"];?>
@@ -24,7 +24,7 @@
     </div>
     <div class="row mb-0">
       <div class="col-md-12 order-1 mb-0">
-        <form name="editarFoto" method="POST" enctype="multipart/form-data" action="<?=BASE_URL;?>galeria/editar/<?=$foto["id"];?>">
+        <form name="editarFoto" method="POST" enctype="multipart/form-data" action="http://localhost/galeria_fotos/galeria/editar/<?=$foto["id"];?>">
           <div class="form-group">
             <label for="titulo" class="form-label">Título</label>
             <!-- input(hidden) contendo valor de id -->

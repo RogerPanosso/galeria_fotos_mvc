@@ -6,11 +6,11 @@
     <meta name="description" content="Galeria de Fotos"/>
     <meta name="author" content="Roger Panosso"/>
     <meta name="keywords" content="Galeria de Fotos"/>
-    <link rel="stylesheet" href="<?=BASE_URL;?>Public/Bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="<?=BASE_URL;?>Public/Bootstrap/css/bootstrap-reboot.min.css"/>
-    <link rel="stylesheet" href="<?=BASE_URL;?>Public/Assets/css/style.css"/>
-    <link rel="stylesheet" href="<?=BASE_URL;?>Public/Fontawesome/css/all.min.css"/>
-    <link rel="stylesheet" href="<?=BASE_URL;?>Public/Fontawesome/css/fontawesome.min.css"/>
+    <link rel="stylesheet" href="http://localhost/galeria_fotos/Public/Bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://localhost/galeria_fotos/Public/Bootstrap/css/bootstrap-reboot.min.css"/>
+    <link rel="stylesheet" href="http://localhost/galeria_fotos/Public/Assets/css/style.css"/>
+    <link rel="stylesheet" href="http://localhost/galeria_fotos/Public/Fontawesome/css/all.min.css"/>
+    <link rel="stylesheet" href="http://localhost/galeria_fotos/Public/Fontawesome/css/fontawesome.min.css"/>
   </head>
   <body>
     <article>
@@ -18,17 +18,17 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-static-top">
           <div class="container-fluid">
             <div class="navbar-header">
-              <a class="navbar-brand" href="<?=BASE_URL;?>">
-                <img src="<?=BASE_URL;?>Public/Assets/images/logo.png" class="img-fluid shadow-sm border border-dark" title="Galeria" alt="Galeria"/>
+              <a class="navbar-brand" href="http://localhost/galeria_fotos/">
+                <img src="http://localhost/galeria_fotos/Public/Assets/images/logo.png" class="img-fluid shadow-sm border border-dark" title="Galeria" alt="Galeria"/>
               </a>
             </div>
             <button type="button" class="navbar-toggler btn btn-default" data-toggle="collapse" data-target="#NavbarMenu">
-              <img src="<?=BASE_URL;?>Public/Assets/images/menu.png" title="Menu" alt="Menu"/>
+              <img src="http://localhost/galeria_fotos/Public/Assets/images/menu.png" title="Menu" alt="Menu"/>
             </button>
             <div class="collapse navbar-collapse" id="NavbarMenu">
               <ul class="navbar-nav ml-auto mb-0">
                 <li class="nav-item">
-                  <a class="nav-link active" href="<?=BASE_URL;?>home/">
+                  <a class="nav-link active" href="http://localhost/galeria_fotos/home/">
                     <span class="nav-link-text"><i class="fa fa-home"></i> Home</span>
                   </a>
                 </li>
@@ -48,12 +48,12 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="<?=BASE_URL;?>adicionarfotos/">
+                  <a class="nav-link" href="http://localhost/galeria_fotos/adicionarfotos/">
                     <span class="nav-link-text"><i class="fa fa-images"></i> Adicionar Foto</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="<?=BASE_URL;?>galeria/">
+                  <a class="nav-link" href="http://localhost/galeria_fotos/galeria/">
                     <span class="nav-link-text"><i class="fas fa-camera-retro"></i> Acessar Galeria</span>
                   </a>
                 </li>
@@ -76,12 +76,12 @@
                   {
                 ?>
                 <li class="nav-item">
-                  <a class="nav-link" href="<?=BASE_URL;?>cadastrouser/">
+                  <a class="nav-link" href="http://localhost/galeria_fotos/cadastrouser/">
                     <span class="nav-link-text"><i class="fas fa-user-plus"></i> Cadastre-se</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="<?=BASE_URL;?>loginuser/">
+                  <a class="nav-link" href="http://localhost/galeria_fotos/loginuser/">
                     <span class="nav-link-text"><i class="fas fa-sign-in-alt"></i> Fazer Login</span>
                   </a>
                 </li>
@@ -108,18 +108,18 @@
               <a href="https://facebook.com/roger.panosso9" class="mr-2 ml-2" target="_blank"><i class="fab fa-facebook-f"></i></a>
               <a href="https://twitter.com/rogerpanosso" class="mr-2 ml-2" target="_blank"><i class="fab fa-twitter"></i></a>
               <a href="https://instagram.com/rogerpanosso" class="mr-2 ml-2" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="https://github.com/DeveloperRogerPanosso" class="mr-2 ml-2" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://github.com/RogerPanosso" class="mr-2 ml-2" target="_blank"><i class="fab fa-github"></i></a>
             </div>
           </div>
         </div>
       </footer>
     </article>
-    <script src="<?=BASE_URL;?>Public/jquery/jquery.min.js"></script>
+    <script src="http://localhost/galeria_fotos/Public/jquery/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="<?=BASE_URL;?>Public/Bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="<?=BASE_URL;?>Public/Assets/js/script.js"></script>
-    <script src="<?=BASE_URL;?>Public/Fontawesome/js/all.min.js"></script>
-    <script src="<?=BASE_URL;?>Public/Fontawesome/js/fontawesome.min.js"></script>
+    <script src="http://localhost/galeria_fotos/Public/Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="http://localhost/galeria_fotos/Public/Assets/js/script.js"></script>
+    <script src="http://localhost/galeria_fotos/Public/Fontawesome/js/all.min.js"></script>
+    <script src="http://localhost/galeria_fotos/Public/Fontawesome/js/fontawesome.min.js"></script>
     <!-- Início modal sobre projeto -->
     <div class="modal fade" id="ModalSobreProjeto" tabindex="-1" role="dialog" aria-labelledby="MyModal">
       <div class="modal-dialog shadow-sm modal-lg" role="document">
@@ -172,7 +172,7 @@
             </div>
           </div>
           <div class="modal-footer bg-light">
-            <a class="btn btn-primary" href="<?=BASE_URL;?>loginuser/logout/">Sim</a>
+            <a class="btn btn-primary" href="http://localhost/galeria_fotos/loginuser/logout/">Sim</a>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
           </div>
         </div>
@@ -204,7 +204,7 @@
               </div>
               <div class="row mb-0">
                 <div class="col-md-12 order-1 mb-0">
-                  <form name="addCategoria" method="POST" action="<?=BASE_URL;?>adicionarcategoria/salvarCategoria/">
+                  <form name="addCategoria" method="POST" action="http://localhost/galeria_fotos/adicionarcategoria/salvarCategoria/">
                     <div class="form-group">
                       <label for="categoria" class="form-label">Categoria</label>
                       <input type="text" name="categoria" class="form-control" autocomplete="off" autofocus placeholder="Ex: Modas" id="modas" required/>

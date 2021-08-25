@@ -4,7 +4,7 @@
       <div class="col-md-12 order-1 mb-0 mt-5">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="<?=BASE_URL;?>home/">home</a>
+            <a href="http://localhost/galeria_fotos/home/">home</a>
           </li>
           <li class="breadcrumb-item active">adicionarfotos</li>
         </ol>
@@ -23,7 +23,7 @@
     </div>
     <div class="row mb-0">
       <div class="col-md-12 order-1 mb-3">
-        <form name="addFoto" method="POST" enctype="multipart/form-data" action="<?=BASE_URL;?>/adicionarfotos/salvarFoto/">
+        <form name="addFoto" method="POST" enctype="multipart/form-data" action="http://localhost/galeria_fotos/adicionarfotos/salvarFoto/">
           <div class="form-group">
             <label for="titulo" class="form-label">Título</label>
             <input type="text" name="titulo" class="form-control" autocomplete="off" autofocus placeholder="Título" id="titulo" required/>

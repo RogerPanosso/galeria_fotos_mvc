@@ -4,7 +4,7 @@
       <div class="col-md-12 order-1 mt-5">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="<?=BASE_URL;?>home/">home</a>
+            <a href="http://localhost/galeria_fotos/home/">home</a>
           </li>
           <li class="breadcrumb-item active">cadastrouser</li>
         </ol>
@@ -23,7 +23,7 @@
     </div>
     <div class="row mb-0">
       <div class="col-md-12 order-1 mb-3">
-        <form name="cadastroUser" method="POST" action="<?=BASE_URL;?>cadastrouser/salvarCadastro/">
+        <form name="cadastroUser" method="POST" action="http://localhost/galeria_fotos/cadastrouser/salvarCadastro/">
           <div class="form-group">
             <label for="nome" class="form-label">Nome</label>
             <input type="text" name="nome" class="form-control" autocomplete="off" placeholder="Nome" id="nome" required/>
@@ -47,7 +47,7 @@
     <div class="row mb-0">
       <div class="col-md-12 order-1 mb-3">
         <p class="text-center text-dark">
-          Já possui cadastro ? <a class="link-striped" href="<?=BASE_URL;?>loginuser/">Faça seu login.</a>
+          Já possui cadastro ? <a class="link-striped" href="http://localhost/galeria_fotos/loginuser/">Faça seu login.</a>
         </p>
       </div>
     </div>

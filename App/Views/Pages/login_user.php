@@ -2,9 +2,9 @@
   <div class="container">
     <div class="areaLoginUser">
       <div class="figure d-flex justify-content-center mb-3">
-        <img src="<?=BASE_URL;?>Public/Assets/images/logo.png" class="figure-img img-fluid rounded shadow-sm" title="Photo" alt="Photo"/>
+        <img src="http://localhost/galeria_fotos/Public/Assets/images/logo.png" class="figure-img img-fluid rounded shadow-sm" title="Photo" alt="Photo"/>
       </div>
-      <form name="login" method="POST" action="<?=BASE_URL;?>loginuser/login/">
+      <form name="login" method="POST" action="http://localhost/galeria_fotos/loginuser/login/">
         <div class="form-group">
           <label for="email" class="form-label">E-Mail</label>
           <input type="email" name="email" class="form-control" autofocus autocomplete="off" placeholder="E-Mail" id="email" required/>
@@ -20,7 +20,7 @@
         Esqueceu sua senha ? <a class="link-striped" href="#" data-toggle="modal" data-target="#ModalEsqueciSenha">Clique aqui.</a>
       </p>
       <p class="bd-lead text-center">
-        Não se cadastro ? <a class="link-striped" href="<?=BASE_URL;?>cadastrouser/">Cadastre-se.</a>
+        Não se cadastro ? <a class="link-striped" href="http://localhost/galeria_fotos/cadastrouser/">Cadastre-se.</a>
       </p>
     </div>
   </div>
@@ -50,7 +50,7 @@
           </div>
           <div class="row mb-0">
             <div class="col-md-12 order-1 mb-0">
-              <form name="esqueciSenha" method="POST" action="<?=BASE_URL;?>loginuser/esqueciSenha/">
+              <form name="esqueciSenha" method="POST" action="http://localhost/galeria_fotos/loginuser/esqueciSenha/">
                 <div class="form-group">
                   <label for="email" class="form-label">E-Mail</label>
                   <input type="email" name="email" class="form-control" autocomplete="off" placeholder="exemplo@hotmail.com" id="email" required/>

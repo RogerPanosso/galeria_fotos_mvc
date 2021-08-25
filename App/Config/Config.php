@@ -8,14 +8,13 @@
   $config = array();
 
   if(ENVIRONMENT == "development") {
-    define("BASE_URL", "http://localhost/phpb7web/php1/galeria_fotos/");
     $config["dbdriver"] = "mysql";
     $config["dbname"] = "projeto_galeria_fotos";
     $config["dbhost"] = "localhost";
     $config["dbuser"] = "root";
     $config["dbpass"] = "";
   }else {
-    define("BASE_URL", "http://localhost/phpb7web/php1/galeria_fotos");
+    /* valores relacionados ao servidor externo */
     $config["dbdriver"] = "mysql";
     $config["dbname"] = "projeto_galeria_fotos";
     $config["dbhost"] = "localhost";

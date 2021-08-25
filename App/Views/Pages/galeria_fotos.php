@@ -24,7 +24,7 @@
       ?>
       <div class="col-md-4 mb-3">
         <div class="card shadow-sm">
-          <img src="<?=BASE_URL;?>Public/Assets/images/galeria/<?=$foto['foto'];?>" width="500" height="250" class="card-img-top"/>
+          <img src="http://localhost/galeria_fotos/Public/Assets/images/galeria/<?=$foto['foto'];?>" width="500" height="250" class="card-img-top"/>
           <div class="card-body">
             <div class="card-title">
               <h5 class="alert-heading"><?=$foto["titulo"];?></h5>
@@ -41,8 +41,8 @@
           </div>
           <div class="card-footer">
             <div class="text-center">
-              <a class="btn btn-info" href="<?=BASE_URL;?>galeria/editarFoto/<?=$foto["id"];?>"><i class="fa fa-edit"></i> Editar</a>
-              <a class="btn btn-danger" href="<?=BASE_URL;?>galeria/excluirFoto/<?=$foto["id"];?>"><i class="fa fa-trash"></i> Excluir</a>
+              <a class="btn btn-info" href="http://localhost/galeria_fotos/galeria/editarFoto/<?=$foto["id"];?>"><i class="fa fa-edit"></i> Editar</a>
+              <a class="btn btn-danger" href="http://localhost/galeria_fotos/galeria/excluirFoto/<?=$foto["id"];?>"><i class="fa fa-trash"></i> Excluir</a>
             </div>
           </div>
         </div>
