@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="row mb-0">
-      <div class="col-md-12 order-1 mb-0">
+      <div class="col-md-12 order-1 mb-3">
         <form name="editarFoto" method="POST" enctype="multipart/form-data" action="http://localhost/galeria_fotos/galeria/editar/<?=$foto["id"];?>">
           <div class="form-group">
             <label for="titulo" class="form-label">Título</label>
@@ -53,7 +53,7 @@
             <label for="descricao" class="form-label">Descrição</label>
             <textarea name="descricao" rows="5" class="form-control" id="descricao"><?=$foto["descricao"];?></textarea>
           </div>
-          <button type="submit" class="btn btn-info btn-block">Editar</button>
+          <button type="submit" class="btn btn-info btn-block mb-3">Editar</button>
         </form>
       </div>
     </div>
