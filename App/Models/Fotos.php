@@ -74,5 +74,29 @@
         return array();
       }
     }
+
+    public function updateFoto($id, $titulo, $autor, $nome_arquivo, $categoria, $descricao)
+    {
+      $query = "UPDATE fotos SET fotos.titulo = :titulo, fotos.autor = :autor, fotos.foto = :nome_arquivo, fotos.categoria = :categoria,
+      fotos.descricao = :descricao WHERE fotos.id = :id";
+      $query = $this->pdo->prepare($query);
+      $query->bindValue(":titulo", $titulo);
+      $query->bindValue(":autor", $autor);
+      $query->bindValue(":nome_arquivo", $nome_arquivo);
+      $query->bindValue(":categoria", $categoria);
+      $query->bindValue(":descricao", $descricao);
+      $query->bindValue(":id", $id);
+      $query->execute();
+      return true;
+    }
+
+    public function deleteFoto($id)
+    {
+      $query = "DELETE FROM fotos WHERE fotos.id = :id";
+      $query = $this->pdo->prepare($query);
+      $query->bindValue(":id", $id);
+      $query->execute();
+      return true;
+    }
   }
 ?>
