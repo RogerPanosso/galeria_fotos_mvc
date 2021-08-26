@@ -42,10 +42,20 @@
                   if(isset($_SESSION["login"]) and !empty($_SESSION["login"]))
                   {
                 ?>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" data-toggle="modal" data-target="#ModalAddCategoria">
-                    <span class="nav-link-text"><i class="fab fa-accusoft"></i> Adicionar Categoria</span>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="DropdownCategorias">
+                    <span class="nav-link-text"><i class="fab fa-accusoft"></i> Categorias</span>
                   </a>
+                  <!-- area dropdown -->
+                  <div class="dropdown-menu dropdown-menu-right" aria-labely="DropdownCategorias">
+                    <a class="dropdown-item text-dark" href="#" data-toggle="modal" data-target="#ModalAddCategoria">
+                      <span>Adicionar Categoria</span>
+                    </a>
+                    <a class="dropdown-item text-dark" href="http://localhost/galeria_fotos/adicionarcategoria/relatorio/">
+                      <span>Obter Relatório</span>
+                    </a>
+                  </a>
+                  <!-- -->
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="http://localhost/galeria_fotos/adicionarfotos/">
@@ -204,7 +214,7 @@
               </div>
               <div class="row mb-0">
                 <div class="col-md-12 order-1 mb-0">
-                  <form name="addCategoria" method="POST" action="http://localhost/galeria_fotos/adicionarcategoria/salvarCategoria/">
+                  <form name="addCategoria" method="POST" action="http://localhost/galeria_fotos/categoria/salvarCategoria/">
                     <div class="form-group">
                       <label for="categoria" class="form-label">Categoria</label>
                       <input type="text" name="categoria" class="form-control" autocomplete="off" autofocus placeholder="Ex: Modas" id="modas" required/>
