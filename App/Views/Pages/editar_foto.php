@@ -18,7 +18,11 @@
     <div class="row mb-0">
       <div class="col-md-12 order-1 mb-3">
         <div class="page-header">
-          <h3 class="lead">Editar Foto(#<?=$foto["id"];?>)</h3>
+          <h3 class="lead">Editar Foto(#<?=$foto["id"];?>)
+            <small>
+              <a class="link-striped" href="#" data-toggle="modal" data-target="#ModalInfoEditarFoto">[?]</a>
+            </small>
+          </h3>
         </div>
       </div>
     </div>
@@ -59,3 +63,36 @@
     </div>
   </div>
 </section>
+<!-- Início modal informações editar -->
+<div class="modal fade" id="ModalInfoEditarFoto" tabindex="-1" role="dialog" aria-labelledby="MyModal">
+  <div class="modal-dialog shadow-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-light">
+        <h5 class="modal-title mb-0">
+          <i class="fa fa-info"></i> Informações
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 order-1">
+              <div class="alert alert-warning fade show shadow-sm bd-lead text-center" role="alert">
+                <small class="mb-0">
+                  Olá <?=$_SESSION["login"]["nome"];?> caso deseje atualizar a foto específica certifique-se de selecionar arquivos
+                  nos quais contenham as seguintes extenções: <mark class="bg-light">.jpg</mark>, <mark class="bg-light">.jpeg</mark> ou <mark class="bg-light">.png</mark>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer bg-light">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fim modal informações editar -->
