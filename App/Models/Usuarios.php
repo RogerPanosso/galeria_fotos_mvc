@@ -91,5 +91,16 @@
         return false;
       }
     }
+
+    public function updateSenha($email, $senha)
+    {
+      $query = "UPDATE usuarios SET senha = :senha WHERE email = :email and ativo = :ativo";
+      $query = $this->pdo->prepare($query);
+      $query->bindValue(":senha", $senha);
+      $query->bindValue(":email", $email);
+      $query->bindValue(":ativo", 1);
+      $query->execute();
+      return true;
+    }
   }
 ?>

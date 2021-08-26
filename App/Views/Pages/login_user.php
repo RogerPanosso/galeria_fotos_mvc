@@ -64,7 +64,7 @@
           </div>
         </div>
         <div class="modal-footer bg-light">
-          <button type="submit" class="btn btn-primary">Atualizar</button>
+          <button type="submit" class="btn btn-primary" onclick="return validarFormUpdateSenha()">Atualizar</button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
         </div>
       </form>

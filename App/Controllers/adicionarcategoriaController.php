@@ -7,6 +7,8 @@
 
   use App\Core\Controller;
   use App\Models\Categorias;
+  use Dompdf\Dompdf;
+  use Dompdf\Options;
 
   class adicionarcategoriaController extends Controller
   {
@@ -31,6 +33,33 @@
         echo "<script>window.history.back()</script>";
         return true;
       }
+    }
+
+    public function relatorio()
+    {
+      $categoria = new Categorias();
+      $data = new \DateTime();
+      $dadosModel = array(
+        "categorias" => $categoria->getCategoriasAll(),
+        "data_atual" => $data->format("d/m/Y")
+      );
+      /* Inícia procedimento de gravar o codigo na memoria */
+      ob_start();
+      $this->loadView("relatorio_categorias", $dadosModel);
+      $html = ob_get_contents();
+      ob_end_clean();
+      $options = new Options();
+      $options->setDefaultFont("Sans-Serif");
+      $options->setChroot(__DIR__);
+      $options->setIsRemoteEnabled(TRUE);
+      $options->setFontHeightRatio(1);
+
+      $dompdf = new Dompdf($options); //agregação de objeto(injeção de dependencia)
+      $dompdf->loadHtml($html);
+      $dompdf->setPaper("A4", "portrat");
+      $dompdf->render();
+      $dompdf->stream("relatorio_categorias.php");
+      return true;
     }
   }
 ?>

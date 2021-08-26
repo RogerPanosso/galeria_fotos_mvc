@@ -38,6 +38,21 @@
       }
     }
 
+    public function esqueciSenha()
+    {
+      $usuario = new Usuarios();
+      $email = trim(filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL));
+      $nova_senha = trim(filter_input(INPUT_POST, "nova_senha", FILTER_SANITIZE_STRING));
+      if($email == true and $nova_senha == true)
+      {
+        $hash_nova_senha = password_hash($nova_senha, PASSWORD_DEFAULT);
+        $usuario->updateSenha($email, $hash_nova_senha);
+        echo "<script>window.alert('Senha atualizada com sucesso !!')</script>";
+        echo "<script>window.history.back()</script>";
+        return false;
+      }
+    }
+
     public function logout()
     {
       if(isset($_SESSION["login"]) and !empty($_SESSION["login"]))

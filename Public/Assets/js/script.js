@@ -41,6 +41,22 @@ function validaFormLogin() {
   }
 }
 
+//define function para validar campos(input) de formulário de atualização de senha de usuário
+function validarFormUpdateSenha() {
+  let email = esqueciSenha.email.value;
+  let nova_senha = esqueciSenha.nova_senha.value;
+
+  if(email == "" || email.indexOf("@") == -1) {
+    window.alert("por favor informe um endereço de e-mail valido");
+    return false;
+  }
+
+  if(senha == "") {
+    window.alert("por favor informe uma senha valida contendo no mínimo 5 caracteres");
+    return false;
+  }
+}
+
 //function procedimento para validar campo(input) de formulário de adição de categorias
 function validaFormAddCategoria() {
   let categoria = addCategoria.categoria.value;

@@ -29,7 +29,7 @@
 
     public function loadView(string $nomeView, array $dadosModel = array())
     {
-      extract($this->dados); //ou extract($dadosModel);
+      extract($dadosModel); //ou extract($dadosModel);
       require "../App/Views/Pages/".$nomeView.".php";
     }
   }
